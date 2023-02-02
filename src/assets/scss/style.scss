@@ -1,0 +1,16 @@
+// === font-face ===
+@import "_fonts.scss";
+
+// === variables ===
+@import "_variables.scss";
+
+// === mixins ===
+@import "_mixins.scss";
+
+/* Default Styles */
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
