@@ -1,0 +1,11 @@
+.hero__info {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 40px;
+    max-width: 752px;
+}
+
+.hero__text {
+    font-size: 3.125rem;
+}

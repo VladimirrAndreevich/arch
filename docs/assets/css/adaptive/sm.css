@@ -1,0 +1,4 @@
+.hero .swiper-slide img {
+    -o-object-position: center center;
+    object-position: center center;
+}

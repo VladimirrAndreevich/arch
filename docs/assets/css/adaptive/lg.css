@@ -61,3 +61,16 @@
     width: 2px;
     background-color: #e5e5e5;
 }
+
+.hero .swiper-slide img {
+    height: 748px;
+}
+
+.hero .swiper-slide img {
+    -o-object-position: center center;
+    object-position: center center;
+}
+
+.hero__text {
+    font-size: 4rem;
+}

@@ -1,9 +1,12 @@
 @use "sass:math";
 @use "sass:color";
+@use "sass:map";
 
 // === variables ===
 @import "../_variables.scss";
 
+// === functions ===
+@import "../_functions.scss";
 // common
 .container-xxl {
   --bs-gutter-x: 6.25rem;
@@ -47,8 +50,6 @@
   }
 }
 
-
-
 // header
 .header {
   //   & > .container-xxl {
@@ -90,5 +91,19 @@
 
       background-color: $color-border;
     }
+  }
+}
+
+// hero
+.hero {
+  & .swiper-slide img {
+    height: 748px;
+  }
+  & .swiper-slide img {
+    object-position: center center;
+  }
+
+  &__text {
+    font-size: toRem(64px);
   }
 }

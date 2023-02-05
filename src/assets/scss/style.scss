@@ -11,10 +11,8 @@
 // === mixins ===
 @import "_mixins.scss";
 
-// Functions
-@function toRem($value) {
-  @return math.div($value, 16px) + rem;
-}
+// === functions ===
+@import "_functions.scss";
 
 /* Default Styles */
 *,
@@ -109,5 +107,78 @@ a {
 
   &__btn-contact {
     margin-right: 49px;
+  }
+}
+
+// Hero
+.hero {
+  & > .container-xxl {
+    padding: 0;
+  }
+
+  & .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  & .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .swiper-slide img {
+    display: block;
+    height: 503px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 0;
+  }
+
+  z-index: 2;
+  &__info {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    left: 49px;
+
+    padding: 32px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      border-radius: 24px 0 0 24px;
+
+      background-color: color.adjust($color-black-main, $alpha: -0.45);
+      backdrop-filter: blur(8px);
+
+      z-index: 1;
+    }
+  }
+
+  &__text {
+    position: relative;
+    color: $color-clear-white;
+
+    font-size: toRem(40px);
+    line-height: 1em;
+
+    z-index: 2;
+  }
+  &__view-all {
+    position: relative;
+    display: inline-block;
+
+    margin-top: 40px;
+
+    color: $color-clear-white;
+    font-size: toRem(24px);
+    text-decoration: underline;
+    z-index: 2;
   }
 }

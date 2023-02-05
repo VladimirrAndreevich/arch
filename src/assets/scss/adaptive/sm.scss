@@ -1,0 +1,10 @@
+@use "sass:math";
+@use "sass:color";
+@use "sass:map";
+
+// hero
+.hero {
+  & .swiper-slide img {
+    object-position: center center;
+  }
+}

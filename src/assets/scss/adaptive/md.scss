@@ -1,0 +1,25 @@
+@use "sass:math";
+@use "sass:color";
+@use "sass:map";
+
+// === functions ===
+@import "../_functions.scss";
+
+// hero
+.hero {
+  & .swiper-slide img {
+    // object-position: center center;
+  }
+  &__info {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 40px;
+
+    max-width: 752px;
+  }
+
+  &__text {
+    font-size: toRem(50px);
+  }
+}
