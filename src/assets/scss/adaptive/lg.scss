@@ -1,0 +1,94 @@
+@use "sass:math";
+@use "sass:color";
+
+// === variables ===
+@import "../_variables.scss";
+
+// common
+.container-xxl {
+  --bs-gutter-x: 6.25rem;
+}
+.logo {
+  box-sizing: content-box;
+  position: static;
+  transform: none;
+
+  height: 100%;
+  padding-left: 32px;
+  padding-right: 48px;
+
+  border-right: 2px solid $color-border;
+
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     top: 0;
+  //     bottom: 0;
+  //     right: 0;
+
+  //     width: 2px;
+
+  //     background-color: $color-border;
+  //   }
+}
+
+.btn-chose-lang {
+  background-color: transparent;
+  border: none;
+}
+
+.dropdown-lang {
+  & .dropdown-menu {
+    --bs-dropdown-min-width: 1rem;
+  }
+
+  & .dropdown-item {
+    --bs-dropdown-link-active-bg: black;
+  }
+}
+
+
+
+// header
+.header {
+  //   & > .container-xxl {
+  //     position: relative;
+  //   }
+  height: 112px;
+
+  &__burger {
+    position: relative;
+    margin-right: 32px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -32px;
+      transform: translateY(-50%);
+
+      height: 44px;
+      width: 2px;
+
+      background-color: $color-border;
+    }
+  }
+
+  &__right-block {
+    position: relative;
+    height: 100%;
+    padding-left: 48px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -48px;
+
+      height: 100%;
+      width: 2px;
+
+      background-color: $color-border;
+    }
+  }
+}

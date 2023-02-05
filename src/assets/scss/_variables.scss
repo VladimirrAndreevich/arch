@@ -1,2 +1,19 @@
 $transition-duration: 0.5s;
 $transition-timing-function: ease;
+
+// Colors
+$color-clear-black: #000000;
+$color-black-main: #111111;
+$color-border: #e5e5e5;
+
+// Fonts
+$fonts: (
+  "main": (
+    "MetropolisAr",
+    sans-serif,
+  ),
+  "additional": (
+    "Montserrat",
+    sans-serif,
+  ),
+);

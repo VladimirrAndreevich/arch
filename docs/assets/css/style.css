@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "MetropolisAr";
+    src: url("../fonts/metropolis/metropolis-regular-webfont.woff") format("woff");
+    src: url("../fonts/metropolis/metropolis-regular-webfont.woff2") format("woff2");
+    src: url("../fonts/metropolis/Metropolis-Regular.otf") format("otf");
+    font-style: normal;
+    font-weight: 400;
+}
+/* Default Styles */
+*,
+*::after,
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "MetropolisAr", sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container-xxl {
+    --bs-gutter-x: 3.125rem;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 108px;
+    height: 48px;
+    background-image: url("../img/logo.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.offcanvas__nav-link {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #111111;
+}
+
+.offcanvas__nav-link:hover {
+    background-color: #f3f3f3;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #111111;
+    --bs-btn-border-color: #111111;
+    --bs-btn-border-radius: 1rem;
+    --bs-btn-hover-bg: #111111;
+    --bs-btn-hover-border-color: #111111;
+    --bs-btn-active-bg: #414141;
+    --bs-btn-active-border-color: #111111;
+    padding: 16px 40px;
+    font-size: 1.125rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 96px;
+}
+
+.header > .container-xxl {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header__burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 32px;
+    width: 32px;
+    padding: 8px 5px;
+}
+
+.header__burger-line {
+    height: 2px;
+    width: 100%;
+    background-color: #000000;
+}
+
+.header__btn-contact {
+    margin-right: 49px;
+}

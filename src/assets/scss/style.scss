@@ -1,3 +1,7 @@
+@use "sass:math";
+@use "sass:color";
+@use "sass:map";
+
 // === font-face ===
 @import "_fonts.scss";
 
@@ -7,10 +11,103 @@
 // === mixins ===
 @import "_mixins.scss";
 
+// Functions
+@function toRem($value) {
+  @return math.div($value, 16px) + rem;
+}
+
 /* Default Styles */
 *,
 *::after,
 *::before {
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: map.get($fonts, "main");
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-xxl {
+  --bs-gutter-x: 3.125rem;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: inline-block;
+  width: 108px;
+  height: 48px;
+
+  background-image: url("../img/logo.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.offcanvas__nav-link {
+  display: inline-block;
+
+  padding: 10px 15px;
+
+  color: $color-black-main;
+
+  &:hover {
+    background-color: color.scale(#ffffff, $blackness: 5%);
+  }
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #{$color-black-main};
+  --bs-btn-border-color: #{$color-black-main};
+  --bs-btn-border-radius: 1rem;
+  --bs-btn-hover-bg: #{$color-black-main};
+  --bs-btn-hover-border-color: #{$color-black-main};
+  --bs-btn-active-bg: #{color.scale($color-black-main, $lightness: 20%)};
+  --bs-btn-active-border-color: #{$color-black-main};
+
+  padding: 16px 40px;
+
+  font-size: toRem(18px);
+}
+
+// header
+.header {
+  display: flex;
+  align-items: center;
+  height: 96px;
+
+  & > .container-xxl {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+  }
+
+  &__burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 32px;
+    width: 32px;
+    padding: 8px 5px;
+
+    &-line {
+      height: 2px;
+      width: 100%;
+
+      background-color: $color-clear-black;
+    }
+  }
+
+  &__btn-contact {
+    margin-right: 49px;
+  }
 }
