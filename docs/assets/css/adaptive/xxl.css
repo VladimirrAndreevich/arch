@@ -35,4 +35,8 @@
     .benefits__buttons {
         border-left: 1px solid #e5e5e5;
     }
+
+    .benefits__top-wrap {
+        border-left: 1px solid #e5e5e5;
+    }
 }
