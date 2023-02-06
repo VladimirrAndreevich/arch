@@ -182,3 +182,94 @@ a {
     z-index: 2;
   }
 }
+
+// benefits
+.benefits {
+  & .continer-xxl__top {
+    padding: 0;
+  }
+  & .col {
+    height: 80px;
+  }
+
+  &__top-wrap > .row > .col:not(:last-child) {
+    border-right: 1px solid $color-border;
+  }
+
+  &__title {
+    font-size: toRem(34px);
+
+    padding: 35px 30px;
+    margin-bottom: 0;
+
+    border-top: 1px solid $color-border;
+    border-right: 1px solid $color-border;
+    border-radius: 0 24px 0 0;
+  }
+
+  &__top-mobile .col {
+    height: 80px;
+    &:not(:last-child) {
+      border-right: 1px solid $color-border;
+    }
+  }
+
+  &__bottom-mobile .col {
+    height: 80px;
+    border-top: 1px solid $color-border;
+
+    &:not(:last-child) {
+      border-right: 1px solid $color-border;
+    }
+  }
+
+  &__swiper {
+    border-top: 1px solid $color-border;
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__picture {
+    padding: 40px 25px 5px 25px;
+
+    & > img {
+      width: 100% !important;
+    }
+  }
+  &__slide-text {
+    padding: 32px 25px;
+
+    font-size: toRem(24px);
+
+    order: 2;
+  }
+
+  &__buttons {
+    display: flex;
+
+    column-gap: 1px;
+    border-top: 1px solid $color-border;
+
+    background-color: $color-border;
+  }
+
+  &__btn {
+    display: inline-block;
+
+    height: 48px;
+    flex-basis: 50%;
+
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    background-color: $color-clear-white;
+
+    &-prev {
+      transform: rotate(180deg);
+    }
+  }
+}

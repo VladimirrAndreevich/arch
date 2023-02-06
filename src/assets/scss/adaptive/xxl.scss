@@ -1,0 +1,53 @@
+@use "sass:math";
+@use "sass:color";
+@use "sass:map";
+
+// === font-face ===
+@import "../_fonts.scss";
+
+// === variables ===
+@import "../_variables.scss";
+
+// === mixins ===
+@import "../_mixins.scss";
+
+// === functions ===
+@import "../_functions.scss";
+
+// benefits
+.benefits {
+  @media (min-width: 1400px) {
+    &__top-wrap {
+      // border-left: 1px solid $color-border;
+    }
+    &__swiper {
+      position: relative;
+      &::before {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        border-left: 1px solid $color-border;
+      }
+      &::after {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        border-right: 1px solid $color-border;
+      }
+    }
+
+    &__buttons {
+      border-left: 1px solid $color-border;
+    }
+  }
+}

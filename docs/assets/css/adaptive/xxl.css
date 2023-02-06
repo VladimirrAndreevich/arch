@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "MetropolisAr";
+    src: url("../fonts/metropolis/metropolis-regular-webfont.woff") format("woff");
+    src: url("../fonts/metropolis/metropolis-regular-webfont.woff2") format("woff2");
+    src: url("../fonts/metropolis/Metropolis-Regular.otf") format("otf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@media (min-width: 1400px) {
+    .benefits__swiper {
+        position: relative;
+    }
+
+    .benefits__swiper::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-left: 1px solid #e5e5e5;
+    }
+
+    .benefits__swiper::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-right: 1px solid #e5e5e5;
+    }
+
+    .benefits__buttons {
+        border-left: 1px solid #e5e5e5;
+    }
+}
