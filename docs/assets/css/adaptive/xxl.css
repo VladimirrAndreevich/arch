@@ -8,6 +8,15 @@
 }
 
 @media (min-width: 1400px) {
+    .row-main {
+        border-left: 1px solid #e5e5e5;
+        border-right: 1px solid #e5e5e5;
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1400px) {
     .benefits__swiper {
         position: relative;
     }
@@ -38,6 +47,11 @@
 
     .benefits__top-wrap {
         border-left: 1px solid #e5e5e5;
+    }
+
+    .benefits__bottom-mobile {
+        border-left: 1px solid #e5e5e5;
+        border-right: 1px solid #e5e5e5;
     }
 }
 

@@ -116,6 +116,9 @@
 
 // benefits
 .benefits {
+  &__bottom-mobile > .col {
+    height: 120px;
+  }
   &__wrap {
     position: relative;
     &::after {
@@ -239,8 +242,7 @@
   }
 }
 
-
-// team 
+// team
 .team {
   &__title {
     margin-top: 50px;

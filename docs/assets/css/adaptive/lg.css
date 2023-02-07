@@ -79,6 +79,10 @@
     font-size: 4rem;
 }
 
+.benefits__bottom-mobile > .col {
+    height: 120px;
+}
+
 .benefits__wrap {
     position: relative;
 }
