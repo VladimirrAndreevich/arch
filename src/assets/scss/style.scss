@@ -361,3 +361,75 @@ a {
     text-decoration: underline;
   }
 }
+
+// consultation
+.consultation {
+  & > .container-xxl {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 320px;
+    padding-bottom: 40px;
+
+    color: $color-clear-white;
+    background-color: $color-black-main;
+
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -152px;
+      bottom: 0;
+      left: 0;
+      right: 34px;
+      transform: rotate(180deg);
+
+      background-image: url("../img/consultationBG.png");
+      background-repeat: no-repeat;
+      background-position: left bottom;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      background: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        #111111 77.08%
+      );
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    max-width: 325px;
+    font-size: toRem(48px);
+
+    z-index: 1;
+  }
+
+  &__text {
+    max-width: 325px;
+    font-size: toRem(18px);
+
+    z-index: 1;
+  }
+
+  &__link {
+    margin-top: 38px;
+
+    color: $color-clear-white;
+    font-size: toRem(24px);
+    text-decoration: underline;
+
+    z-index: 1;
+  }
+}

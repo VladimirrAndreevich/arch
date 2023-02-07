@@ -1,0 +1,31 @@
+@use "sass:math";
+@use "sass:color";
+@use "sass:map";
+
+// === variables ===
+@import "../_variables.scss";
+
+// === functions ===
+@import "../_functions.scss";
+
+// consultation
+.consultation {
+  & > .container-xxl {
+    padding-top: 80px;
+
+    &::before {
+      top: 80px;
+      right: 80px;
+      transform: none;
+
+      background-position: right top;
+      background-size: 65%;
+    }
+    &::after {
+      display: none;
+    }
+  }
+  &__title {
+    margin-bottom: 32px;
+  }
+}

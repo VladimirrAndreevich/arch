@@ -316,3 +316,58 @@ a {
     font-size: 1.5rem;
     text-decoration: underline;
 }
+
+.consultation > .container-xxl {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 320px;
+    padding-bottom: 40px;
+    color: #ffffff;
+    background-color: #111111;
+    overflow: hidden;
+}
+
+.consultation > .container-xxl::before {
+    content: "";
+    position: absolute;
+    top: -152px;
+    bottom: 0;
+    left: 0;
+    right: 34px;
+    transform: rotate(180deg);
+    background-image: url("../img/consultationBG.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.consultation > .container-xxl::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, #111111 77.08%);
+}
+
+.consultation__title {
+    margin-bottom: 24px;
+    max-width: 325px;
+    font-size: 3rem;
+    z-index: 1;
+}
+
+.consultation__text {
+    max-width: 325px;
+    font-size: 1.125rem;
+    z-index: 1;
+}
+
+.consultation__link {
+    margin-top: 38px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    z-index: 1;
+}

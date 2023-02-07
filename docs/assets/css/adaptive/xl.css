@@ -1,0 +1,19 @@
+.consultation > .container-xxl {
+    padding-top: 80px;
+}
+
+.consultation > .container-xxl::before {
+    top: 80px;
+    right: 80px;
+    transform: none;
+    background-position: right top;
+    background-size: 65%;
+}
+
+.consultation > .container-xxl::after {
+    display: none;
+}
+
+.consultation__title {
+    margin-bottom: 32px;
+}
