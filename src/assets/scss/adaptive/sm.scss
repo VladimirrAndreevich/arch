@@ -2,6 +2,8 @@
 @use "sass:color";
 @use "sass:map";
 
+// === functions ===
+@import "../_functions.scss";
 // hero
 .hero {
   & .swiper-slide img {
@@ -9,3 +11,9 @@
   }
 }
 
+// contact
+.contact {
+  & .form__title {
+    font-size: toRem(50px);
+  }
+}

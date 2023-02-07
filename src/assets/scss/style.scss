@@ -433,3 +433,91 @@ a {
     z-index: 1;
   }
 }
+
+// contact
+.contact {
+  & .container-xxl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url("../img/contactBG.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 452px;
+    width: 100%;
+    padding: 32px;
+    margin-top: 480px;
+    margin-bottom: 40px;
+    border-radius: 24px;
+
+    background: rgba(17, 17, 17, 0.72);
+    backdrop-filter: blur(8px);
+
+    & input:not(:last-child),
+    & textarea,
+    & select {
+      margin-bottom: 24px;
+
+      border: none;
+      border-bottom: 1px solid #444444;
+
+      padding: 4px;
+      height: 31px;
+
+      color: $color-clear-white;
+
+      background-color: transparent;
+      outline: none;
+
+      &::placeholder {
+        color: $color-clear-white;
+      }
+
+      &:focus-visible {
+        border-bottom: 1px solid $color-clear-white;
+      }
+
+      & option {
+        color: $color-black-main;
+      }
+    }
+
+    & input[type="submit"] {
+      padding: 16px 14px;
+      border: 1px solid $color-clear-white;
+      border-radius: 16px;
+
+      color: $color-clear-white;
+      font-size: toRem(18px);
+
+      background-color: transparent;
+    }
+
+    & textarea {
+      overflow: hidden;
+      resize: none;
+    }
+
+    & select {
+      border-radius: 0;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  & .form__title {
+    margin-bottom: 26px;
+
+    font-size: toRem(32px);
+    color: $color-clear-white;
+  }
+}

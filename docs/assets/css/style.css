@@ -371,3 +371,82 @@ a {
     text-decoration: underline;
     z-index: 1;
 }
+
+.contact .container-xxl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/contactBG.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 452px;
+    width: 100%;
+    padding: 32px;
+    margin-top: 480px;
+    margin-bottom: 40px;
+    border-radius: 24px;
+    background: rgba(17, 17, 17, 0.72);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+.contact__form input:not(:last-child), .contact__form textarea, .contact__form select {
+    margin-bottom: 24px;
+    border: none;
+    border-bottom: 1px solid #444444;
+    padding: 4px;
+    height: 31px;
+    color: #ffffff;
+    background-color: transparent;
+    outline: none;
+}
+
+.contact__form input:not(:last-child)::-moz-placeholder, .contact__form textarea::-moz-placeholder, .contact__form select::-moz-placeholder {
+    color: #ffffff;
+}
+
+.contact__form input:not(:last-child)::placeholder, .contact__form textarea::placeholder, .contact__form select::placeholder {
+    color: #ffffff;
+}
+
+.contact__form input:not(:last-child):focus-visible, .contact__form textarea:focus-visible, .contact__form select:focus-visible {
+    border-bottom: 1px solid #ffffff;
+}
+
+.contact__form input:not(:last-child) option, .contact__form textarea option, .contact__form select option {
+    color: #111111;
+}
+
+.contact__form input[type=submit] {
+    padding: 16px 14px;
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+    color: #ffffff;
+    font-size: 1.125rem;
+    background-color: transparent;
+}
+
+.contact__form textarea {
+    overflow: hidden;
+    resize: none;
+}
+
+.contact__form select {
+    border-radius: 0;
+}
+
+.contact__form select:focus {
+    box-shadow: none;
+}
+
+.contact .form__title {
+    margin-bottom: 26px;
+    font-size: 2rem;
+    color: #ffffff;
+}

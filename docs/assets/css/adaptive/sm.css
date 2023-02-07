@@ -2,3 +2,7 @@
     -o-object-position: center center;
     object-position: center center;
 }
+
+.contact .form__title {
+    font-size: 3.125rem;
+}

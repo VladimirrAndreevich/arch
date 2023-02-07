@@ -183,3 +183,32 @@
     margin-top: 50px;
     font-size: 3.75rem;
 }
+
+.contact .container-xxl {
+    align-items: flex-end;
+}
+
+.contact__form {
+    margin-top: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.contact .form__title {
+    font-size: 3.75rem;
+    margin-bottom: 32px;
+}
+
+.contact input:not(:last-child), .contact textarea, .contact select {
+    padding: 6px;
+}
+
+.contact select {
+    line-height: 1em;
+}
+
+.contact input[type=submit] {
+    align-self: flex-end;
+    padding: 16px 40px;
+    margin-top: 16px;
+}

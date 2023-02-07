@@ -251,8 +251,37 @@
   }
 }
 
+// contact
+.contact {
+  & .container-xxl {
+    align-items: flex-end;
+  }
+  &__form {
+    margin-top: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 
-// consultation
-.consultation {
-  
+  & .form__title {
+    font-size: toRem(60px);
+
+    margin-bottom: 32px;
+  }
+
+  & input:not(:last-child),
+  & textarea,
+  & select {
+    padding: 6px;
+  }
+
+  & select {
+    line-height: 1em;
+  }
+
+  & input[type="submit"] {
+    align-self: flex-end;
+
+    padding: 16px 40px;
+    margin-top: 16px;
+  }
 }
