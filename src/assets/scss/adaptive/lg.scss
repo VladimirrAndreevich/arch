@@ -220,3 +220,15 @@
     }
   }
 }
+
+// opinion
+.opinion {
+  &__text {
+    right: 0;
+    left: auto;
+
+    max-width: 468px;
+
+    font-size: toRem(30px);
+  }
+}

@@ -273,3 +273,45 @@ a {
     }
   }
 }
+
+// opinion
+.opinion {
+  &__top {
+    position: relative;
+
+    height: 736px;
+
+    background-image: url("../img/opinionBG.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    right: 25px;
+
+    padding: 32px;
+    margin-bottom: 0;
+
+    border-radius: 24px 0 0 0;
+    border: 1px solid $color-border;
+
+    font-size: toRem(24px);
+
+    background-color: $color-clear-white;
+  }
+
+  .row {
+    --bs-gutter-x: 0;
+  }
+
+  .col {
+    height: 80px;
+    &:not(:first-child) {
+      border-left: 1px solid $color-border;
+    }
+  }
+}

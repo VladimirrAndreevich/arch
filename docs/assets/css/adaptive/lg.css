@@ -163,3 +163,10 @@
     width: 1px;
     background-color: #e5e5e5;
 }
+
+.opinion__text {
+    right: 0;
+    left: auto;
+    max-width: 468px;
+    font-size: 1.875rem;
+}

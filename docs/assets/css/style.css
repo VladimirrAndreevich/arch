@@ -244,3 +244,37 @@ a {
 .benefits__btn-prev {
     transform: rotate(180deg);
 }
+
+.opinion__top {
+    position: relative;
+    height: 736px;
+    background-image: url("../img/opinionBG.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.opinion__text {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    right: 25px;
+    padding: 32px;
+    margin-bottom: 0;
+    border-radius: 24px 0 0 0;
+    border: 1px solid #e5e5e5;
+    font-size: 1.5rem;
+    background-color: #ffffff;
+}
+
+.opinion .row {
+    --bs-gutter-x: 0;
+}
+
+.opinion .col {
+    height: 80px;
+}
+
+.opinion .col:not(:first-child) {
+    border-left: 1px solid #e5e5e5;
+}
