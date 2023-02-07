@@ -25,6 +25,10 @@
     --bs-dropdown-link-active-bg: black;
 }
 
+.row-main .col {
+    height: 120px;
+}
+
 .header {
     height: 112px;
 }
@@ -169,4 +173,9 @@
     left: auto;
     max-width: 468px;
     font-size: 1.875rem;
+}
+
+.team__title {
+    margin-top: 50px;
+    font-size: 3.75rem;
 }

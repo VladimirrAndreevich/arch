@@ -61,6 +61,18 @@ a {
     font-size: 1.125rem;
 }
 
+.row-main {
+    --bs-gutter-x: 0;
+}
+
+.row-main .col {
+    height: 80px;
+}
+
+.row-main .col:not(:first-child) {
+    border-left: 1px solid #e5e5e5;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -267,14 +279,40 @@ a {
     background-color: #ffffff;
 }
 
-.opinion .row {
-    --bs-gutter-x: 0;
+.team > .container-xxl {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 140px;
+    background-image: url("../img/teamBG.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
-.opinion .col {
-    height: 80px;
+.team__title {
+    margin-top: 18px;
+    font-size: 3rem;
 }
 
-.opinion .col:not(:first-child) {
-    border-left: 1px solid #e5e5e5;
+.team__info {
+    position: relative;
+    bottom: -140px;
+    max-width: 468px;
+    padding: 32px;
+    margin-top: 315px;
+    border-radius: 24px;
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+}
+
+.team__text {
+    font-size: 1.125rem;
+}
+
+.team__link {
+    margin-top: 24px;
+    color: #111111;
+    font-size: 1.5rem;
+    text-decoration: underline;
 }

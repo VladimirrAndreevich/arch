@@ -50,6 +50,12 @@
   }
 }
 
+.row-main {
+  & .col {
+    height: 120px;
+  }
+}
+
 // header
 .header {
   //   & > .container-xxl {
@@ -230,5 +236,15 @@
     max-width: 468px;
 
     font-size: toRem(30px);
+  }
+}
+
+
+// team 
+.team {
+  &__title {
+    margin-top: 50px;
+
+    font-size: toRem(60px);
   }
 }

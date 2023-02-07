@@ -9,3 +9,20 @@
 .hero__text {
     font-size: 3.125rem;
 }
+
+.team > .container-xxl {
+    margin-bottom: 0;
+}
+
+.team__info {
+    bottom: 22px;
+    margin-top: 524px;
+}
+
+.team__title {
+    font-size: 3.4375rem;
+}
+
+.team__text {
+    font-size: 1.25rem;
+}

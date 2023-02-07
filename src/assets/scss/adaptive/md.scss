@@ -23,3 +23,20 @@
     font-size: toRem(50px);
   }
 }
+
+// team
+.team {
+  & > .container-xxl {
+    margin-bottom: 0;
+  }
+  &__info {
+    bottom: 22px;
+    margin-top: 524px;
+  }
+  &__title {
+    font-size: toRem(55px);
+  }
+  &__text {
+    font-size: toRem(20px);
+  }
+}
