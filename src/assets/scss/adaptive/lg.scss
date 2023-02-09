@@ -285,3 +285,44 @@
     margin-top: 16px;
   }
 }
+
+// projects
+.projects {
+  & .container-xxl {
+    padding-top: 80px;
+    padding-bottom: 64px;
+  }
+  &__swiper {
+    & .swiper-wrapper {
+      margin-left: 430px;
+      margin-top: 0;
+      & .swiper-slide {
+        width: 491px;
+        height: 441px;
+      }
+    }
+  }
+
+  &__top-wrap {
+    position: absolute;
+
+    width: 400px;
+    height: 441px;
+
+    padding-right: 50px;
+
+    // margin-right: 80px;
+
+    background-color: $color-clear-white;
+
+    z-index: 2;
+  }
+
+  &__text {
+    font-size: toRem(20px);
+  }
+
+  &__title {
+    margin-top: 40px;
+  }
+}

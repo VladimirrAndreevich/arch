@@ -450,3 +450,82 @@ a {
     font-size: 2rem;
     color: #ffffff;
 }
+
+.projects > .container-xxl {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.projects__title {
+    margin-bottom: 24px;
+    font-size: 3rem;
+}
+
+.projects__text {
+    margin-bottom: 48px;
+    font-size: 1.125rem;
+}
+
+.projects__link {
+    color: #111111;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.projects__swiper .swiper-wrapper {
+    margin-top: 32px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.projects__swiper .swiper-wrapper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    width: 309px;
+    height: 441px;
+    overflow: hidden;
+}
+
+.projects__scrollbar {
+    position: relative;
+    height: 8px;
+    margin-top: 20px;
+}
+
+.projects__scrollbar::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    background-color: #111111;
+}
+
+.projects__scrollbar .swiper-scrollbar-drag {
+    position: relative;
+    border-radius: 8px;
+    background-color: #111111;
+    z-index: 1;
+}
+
+.projects__scrollbar .swiper-scrollbar-drag::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    width: 6px;
+    height: 8px;
+    background-color: #ffffff;
+}
+
+.projects__scrollbar .swiper-scrollbar-drag::after {
+    content: "";
+    position: absolute;
+    right: -6px;
+    width: 6px;
+    height: 8px;
+    background-color: #ffffff;
+}

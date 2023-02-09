@@ -21,3 +21,8 @@
 .contact__form {
     margin-right: 100px;
 }
+
+.projects__swiper .swiper-wrapper .swiper-slide {
+    width: 591px;
+    height: 441px;
+}

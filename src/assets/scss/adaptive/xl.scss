@@ -37,3 +37,16 @@
     margin-right: 100px;
   }
 }
+
+
+// projects
+.projects {
+  &__swiper {
+    & .swiper-wrapper {
+      & .swiper-slide {
+        width: 591px;
+        height: 441px;
+      }
+    }
+  }
+}

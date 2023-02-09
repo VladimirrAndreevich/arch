@@ -521,3 +521,93 @@ a {
     color: $color-clear-white;
   }
 }
+
+// projects
+.projects {
+  & > .container-xxl {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    font-size: toRem(48px);
+  }
+
+  &__text {
+    margin-bottom: 48px;
+
+    font-size: toRem(18px);
+  }
+
+  &__link {
+    color: $color-black-main;
+    font-size: toRem(24px);
+    text-decoration: underline;
+  }
+
+  &__swiper {
+    & .swiper-wrapper {
+      margin-top: 32px;
+      user-select: none;
+
+      & .swiper-slide {
+        display: flex;
+        justify-content: center;
+
+        width: 309px;
+        height: 441px;
+
+        overflow: hidden;
+      }
+    }
+  }
+
+  &__scrollbar {
+    position: relative;
+    height: 8px;
+    margin-top: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 3px;
+      bottom: 3px;
+      left: 0;
+      right: 0;
+
+      background-color: $color-black-main;
+    }
+
+    & .swiper-scrollbar-drag {
+      position: relative;
+
+      border-radius: 8px;
+
+      background-color: $color-black-main;
+
+      z-index: 1;
+      &::before {
+        content: "";
+        position: absolute;
+        left: -6px;
+
+        width: 6px;
+        height: 8px;
+        background-color: $color-clear-white;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        right: -6px;
+
+        width: 6px;
+        height: 8px;
+        background-color: $color-clear-white;
+      }
+    }
+  }
+}

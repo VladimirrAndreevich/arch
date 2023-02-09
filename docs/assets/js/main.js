@@ -14,10 +14,6 @@ var benefitsSwiper = new Swiper(".benefits__swiper", {
   loop: true,
   grabCursor: true,
   autoHeight: true,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
   navigation: {
     nextEl: ".benefits__btn-next",
     prevEl: ".benefits__btn-prev",
@@ -26,5 +22,24 @@ var benefitsSwiper = new Swiper(".benefits__swiper", {
   //   delay: 2500,
   //   disableOnInteraction: false,
   // },
+});
+var benefitsSwiper = new Swiper(".projects__swiper", {
+  grabCursor: true,
+  slidesPerView: "auto",
+  spaceBetween: 16,
+  navigation: {
+    nextEl: ".benefits__btn-next",
+    prevEl: ".benefits__btn-prev",
+  },
+  scrollbar: {
+    el: ".projects__scrollbar",
+    hide: false,
+  },
+  breakpoints: {
+    // when window width is >= 998px
+    998: {
+      spaceBetween: 40,
+    },
+  },
 });
 console.log(2)

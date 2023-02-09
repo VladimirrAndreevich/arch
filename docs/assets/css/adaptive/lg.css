@@ -212,3 +212,35 @@
     padding: 16px 40px;
     margin-top: 16px;
 }
+
+.projects .container-xxl {
+    padding-top: 80px;
+    padding-bottom: 64px;
+}
+
+.projects__swiper .swiper-wrapper {
+    margin-left: 430px;
+    margin-top: 0;
+}
+
+.projects__swiper .swiper-wrapper .swiper-slide {
+    width: 491px;
+    height: 441px;
+}
+
+.projects__top-wrap {
+    position: absolute;
+    width: 400px;
+    height: 441px;
+    padding-right: 50px;
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+.projects__text {
+    font-size: 1.25rem;
+}
+
+.projects__title {
+    margin-top: 40px;
+}
