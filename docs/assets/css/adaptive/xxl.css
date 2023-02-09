@@ -60,3 +60,8 @@
         background-size: 1320px;
     }
 }
+
+.projects .container-xxl {
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+}
