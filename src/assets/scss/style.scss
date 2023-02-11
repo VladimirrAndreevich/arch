@@ -27,6 +27,11 @@ body {
   font-weight: 400;
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -85,6 +90,87 @@ a {
   }
 }
 
+.navigation {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  z-index: 5;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &_show {
+    display: flex;
+  }
+
+  &__content {
+    padding: 25px;
+    // width: 70%;
+    // height: 100%;
+    flex-basis: 90%;
+
+    background-color: $color-clear-white;
+  }
+
+  &__close-block {
+    flex-basis: 10%;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 50px;
+    padding-left: 0;
+
+    list-style-type: none;
+  }
+
+  &__link {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+
+    color: $color-black-main;
+
+    &:hover {
+      background-color: #f3f3f3;
+    }
+  }
+
+  &__close {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+    background-image: url(../img/close.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 // header
 .header {
   display: flex;
@@ -106,6 +192,8 @@ a {
     height: 32px;
     width: 32px;
     padding: 8px 5px;
+
+    cursor: pointer;
 
     &-line {
       height: 2px;
@@ -499,6 +587,14 @@ a {
       font-size: toRem(18px);
 
       background-color: transparent;
+
+      transition-property: color background-color;
+      transition-duration: $transition-duration;
+      transition-timing-function: $transition-timing-function;
+      &:hover {
+        color: $color-clear-black;
+        background-color: $color-clear-white;
+      }
     }
 
     & textarea {
@@ -707,6 +803,15 @@ a {
 
     color: $color-black-main;
     font-size: toRem(18px);
+
+    transition-property: color background-color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+
+    &:hover {
+      color: $color-clear-white;
+      background-color: $color-black-main;
+    }
   }
 
   &__down {

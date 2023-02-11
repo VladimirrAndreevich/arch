@@ -4,6 +4,18 @@
 
 // === functions ===
 @import "../_functions.scss";
+
+//navigation
+.navigation {
+  &__content {
+    max-width: 350px;
+  }
+
+  &__close-block {
+    flex-basis: 100%;
+  }
+}
+
 // hero
 .hero {
   & .swiper-slide img {

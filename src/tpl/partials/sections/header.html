@@ -1,13 +1,7 @@
 <header class="header">
   <div class="container-xxl">
     <div class="header__burger-wrapp">
-      <a
-        class="header__burger"
-        data-bs-toggle="offcanvas"
-        href="#offcanvasExample"
-        role="button"
-        aria-controls="offcanvasExample"
-      >
+      <a class="header__burger" id="header__burger">
         <div class="header__burger-line"></div>
         <div class="header__burger-line"></div>
         <div class="header__burger-line"></div>
@@ -40,27 +34,36 @@
         </ul>
       </div>
     </div>
-
-    <div
-      class="offcanvas offcanvas-start"
-      tabindex="-1"
-      id="offcanvasExample"
-      aria-labelledby="offcanvasExampleLabel"
-    >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Navigation</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body d-flex flex-column">
-        <a href="#" class="offcanvas__nav-link">Recent projects</a>
-        <a href="#" class="offcanvas__nav-link">Consultation service</a>
-        <a href="#" class="offcanvas__nav-link">Contact us</a>
-      </div>
-    </div>
   </div>
 </header>
+
+<nav class="navigation" id="navigation">
+  <div class="navigation__content">
+    <div class="navigation__header">
+      <h5 class="navigation__title">Navigation</h5>
+      <a href="#" class="navigation__close" id="close-btn"></a>
+    </div>
+
+    <ul class="navigation__list">
+      <li class="navigation__item">
+        <a href="#benefits" class="navigation__link">Benefits</a>
+      </li>
+
+      <li class="navigation__item">
+        <a href="#team" class="navigation__link">Our team</a>
+      </li>
+      <li class="navigation__item">
+        <a href="#projects" class="navigation__link">Recent projects</a>
+      </li>
+      <li class="navigation__item">
+        <a href="#consultation" class="navigation__link"
+          >Consultation service</a
+        >
+      </li>
+      <li class="navigation__item">
+        <a href="#contact" class="navigation__link">Contact us</a>
+      </li>
+    </ul>
+  </div>
+  <div class="navigation__close-block" id="close-block"></div>
+</nav>

@@ -19,6 +19,11 @@ body {
     font-weight: 400;
 }
 
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
 }
@@ -73,6 +78,76 @@ a {
     border-left: 1px solid #e5e5e5;
 }
 
+.navigation {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navigation__title {
+    margin-bottom: 0;
+}
+
+.navigation_show {
+    display: flex;
+}
+
+.navigation__content {
+    padding: 25px;
+    flex-basis: 90%;
+    background-color: #ffffff;
+}
+
+.navigation__close-block {
+    flex-basis: 10%;
+}
+
+.navigation__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.navigation__link {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    color: #111111;
+}
+
+.navigation__link:hover {
+    background-color: #f3f3f3;
+}
+
+.navigation__close {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/close.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.navigation__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -92,6 +167,7 @@ a {
     height: 32px;
     width: 32px;
     padding: 8px 5px;
+    cursor: pointer;
 }
 
 .header__burger-line {
@@ -430,6 +506,14 @@ a {
     color: #ffffff;
     font-size: 1.125rem;
     background-color: transparent;
+    transition-property: color background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.contact__form input[type=submit]:hover {
+    color: #000000;
+    background-color: #ffffff;
 }
 
 .contact__form textarea {
@@ -607,6 +691,14 @@ a {
     border-radius: 16px;
     color: #111111;
     font-size: 1.125rem;
+    transition-property: color background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.footer__contacts-btn:hover {
+    color: #ffffff;
+    background-color: #111111;
 }
 
 .footer__down {

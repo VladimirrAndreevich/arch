@@ -1,3 +1,11 @@
+.navigation__content {
+    max-width: 350px;
+}
+
+.navigation__close-block {
+    flex-basis: 100%;
+}
+
 .hero .swiper-slide img {
     -o-object-position: center center;
     object-position: center center;

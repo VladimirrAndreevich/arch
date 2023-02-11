@@ -42,4 +42,54 @@ var benefitsSwiper = new Swiper(".projects__swiper", {
     },
   },
 });
-console.log(2)
+function toggleScroll() {
+  document.body.classList.toggle("stop-scrolling");
+}
+
+// let navigation = document.getElementById("navigation");
+// let link__nav = document.getElementsByClassName("navigation__link");
+// let active = document.getElementById("header__burger");
+// let closeBlock = document.getElementById("close-block");
+// let closeBtn = document.getElementById("close-btn");
+
+// active.addEventListener("click", () => {
+//   navigation.classList.toggle("navigation_show");
+//   toggleScroll();
+// });
+
+// closeBlock.addEventListener("click", () => {
+//   navigation.classList.toggle("navigation_show");
+//   toggleScroll();
+// });
+// closeBtn.addEventListener("click", () => {
+//   navigation.classList.toggle("navigation_show");
+//   toggleScroll();
+// });
+
+// for (let index = 0; index < link__nav.length; index++) {
+//   const element = link__nav[index];
+//   element.addEventListener("click", () => {
+//     navigation.classList.toggle("navigation_show");
+//     toggleScroll();
+//   });
+// }
+
+let navigation = document.getElementById("navigation");
+let toggleElemets = [
+  document.getElementById("header__burger"),
+  document.getElementById("close-block"),
+  document.getElementById("close-btn"),
+];
+
+let link__nav = document.getElementsByClassName("navigation__link");
+for (let index = 0; index < link__nav.length; index++) {
+  const element = link__nav[index];
+  toggleElemets.push(element);
+}
+
+for (let index = 0; index < toggleElemets.length; index++) {
+  toggleElemets[index].addEventListener("click", () => {
+    navigation.classList.toggle("navigation_show");
+    toggleScroll();
+  });
+}
