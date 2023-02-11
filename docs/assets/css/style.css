@@ -573,6 +573,7 @@ a {
     font-size: 1.125rem;
     line-height: 1.5rem;
     color: #111111;
+    transition: color 0.5s ease;
 }
 
 .footer__link:hover {
@@ -669,6 +670,7 @@ a {
 
 .info .info__link {
     color: #111111;
+    transition: color 0.5s ease;
 }
 
 .info .info__link:hover {

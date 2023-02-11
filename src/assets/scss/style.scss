@@ -666,6 +666,8 @@ a {
     line-height: toRem(24px);
     color: $color-black-main;
 
+    transition: color $transition-duration $transition-timing-function;
+
     &:hover {
       color: color.scale($color-black-main, $lightness: 35%);
     }
@@ -776,6 +778,8 @@ a {
 
   & &__link {
     color: $color-black-main;
+
+    transition: color $transition-duration $transition-timing-function;
 
     &:hover {
       color: color.scale($color-black-main, $lightness: 35%);
