@@ -326,3 +326,31 @@
     margin-top: 40px;
   }
 }
+
+// footer
+.footer {
+  &__main {
+    flex-direction: row;
+
+    row-gap: 0;
+    column-gap: 1px;
+  }
+
+  &__contacts-btn {
+    max-width: 165px;
+  }
+
+  &__down {
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+
+  &__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

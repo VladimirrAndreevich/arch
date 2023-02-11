@@ -30,14 +30,12 @@
   }
 }
 
-
 // contact
 .contact {
   &__form {
     margin-right: 100px;
   }
 }
-
 
 // projects
 .projects {
@@ -48,5 +46,30 @@
         height: 441px;
       }
     }
+  }
+}
+
+// footer
+.footer {
+  &__list {
+    &-title {
+      font-size: toRem(36px);
+    }
+  }
+
+  &__link {
+    font-size: toRem(20px);
+    line-height: toRem(27px);
+  }
+
+  
+}
+
+.info {
+  &__item {
+    font-size: toRem(20px);
+  }
+  &__title {
+    line-height: toRem(24px);
   }
 }

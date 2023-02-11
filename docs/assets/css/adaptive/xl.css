@@ -26,3 +26,20 @@
     width: 591px;
     height: 441px;
 }
+
+.footer__list-title {
+    font-size: 2.25rem;
+}
+
+.footer__link {
+    font-size: 1.25rem;
+    line-height: 1.6875rem;
+}
+
+.info__item {
+    font-size: 1.25rem;
+}
+
+.info__title {
+    line-height: 1.5rem;
+}

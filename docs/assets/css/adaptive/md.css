@@ -26,3 +26,12 @@
 .team__text {
     font-size: 1.25rem;
 }
+
+.footer__contacts-wrap {
+    position: relative;
+}
+
+.footer__contacts-info {
+    position: absolute;
+    right: 0;
+}

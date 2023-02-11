@@ -244,3 +244,27 @@
 .projects__title {
     margin-top: 40px;
 }
+
+.footer__main {
+    flex-direction: row;
+    row-gap: 0;
+    -moz-column-gap: 1px;
+    column-gap: 1px;
+}
+
+.footer__contacts-btn {
+    max-width: 165px;
+}
+
+.footer__down {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 62px;
+    padding-bottom: 62px;
+}
+
+.footer__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

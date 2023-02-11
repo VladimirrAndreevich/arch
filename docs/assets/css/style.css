@@ -529,3 +529,148 @@ a {
     height: 8px;
     background-color: #ffffff;
 }
+
+.footer__main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: #e5e5e5;
+}
+
+.footer__nav {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 25px;
+    background-color: #ffffff;
+}
+
+.footer__contacts {
+    flex-basis: 100%;
+    padding: 40px 25px;
+    background-color: #ffffff;
+}
+
+.footer__list {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.footer__list-title {
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+    color: #111111;
+}
+
+.footer__item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.footer__link {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: #111111;
+}
+
+.footer__link:hover {
+    color: #646464;
+}
+
+.footer__contacts-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.footer__contacts-title {
+    margin-bottom: 24px;
+    font-size: 2.25rem;
+}
+
+.footer__contacts-info {
+    margin-bottom: 24px;
+    font-size: 1.25rem;
+}
+
+.footer__contacts-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: 1px solid #111111;
+    border-radius: 16px;
+    color: #111111;
+    font-size: 1.125rem;
+}
+
+.footer__down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    row-gap: 16px;
+}
+
+.footer__copyright {
+    font-size: 0.875rem;
+    color: #444444;
+}
+
+.footer__made {
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    color: #444444;
+    transition: color 0.5s ease;
+}
+
+.footer__made:hover {
+    color: #000000;
+}
+
+.footer__logo {
+    opacity: 0.3;
+    transition: opacity 0.5s ease;
+}
+
+.footer__logo:hover {
+    opacity: 1;
+}
+
+.info__list {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.info__item {
+    line-height: 1.25rem;
+    color: #111111;
+    list-style: none;
+}
+
+.info__item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.info__title {
+    margin-bottom: 4px;
+    line-height: 1.5rem;
+}
+
+.info__adress {
+    margin-bottom: 0;
+}
+
+.info .info__link {
+    color: #111111;
+}
+
+.info .info__link:hover {
+    color: #646464;
+}

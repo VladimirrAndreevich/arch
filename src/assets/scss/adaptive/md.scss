@@ -40,3 +40,16 @@
     font-size: toRem(20px);
   }
 }
+
+// footer
+.footer {
+  &__contacts {
+    &-wrap {
+      position: relative;
+    }
+    &-info {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
