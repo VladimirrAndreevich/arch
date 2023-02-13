@@ -78,6 +78,26 @@ a {
     border-left: 1px solid #e5e5e5;
 }
 
+@keyframes leftToRight {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes opacityAppear {
+    0% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
 .navigation {
     position: fixed;
     top: 0;
@@ -93,6 +113,7 @@ a {
     overflow: hidden;
     z-index: 5;
     background-color: rgba(0, 0, 0, 0.5);
+    animation: opacityAppear 0.8s;
 }
 
 .navigation__title {
@@ -107,6 +128,7 @@ a {
     padding: 25px;
     flex-basis: 90%;
     background-color: #ffffff;
+    animation: leftToRight 0.8s;
 }
 
 .navigation__close-block {
