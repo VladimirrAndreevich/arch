@@ -46,34 +46,6 @@ function toggleScroll() {
   document.body.classList.toggle("stop-scrolling");
 }
 
-// let navigation = document.getElementById("navigation");
-// let link__nav = document.getElementsByClassName("navigation__link");
-// let active = document.getElementById("header__burger");
-// let closeBlock = document.getElementById("close-block");
-// let closeBtn = document.getElementById("close-btn");
-
-// active.addEventListener("click", () => {
-//   navigation.classList.toggle("navigation_show");
-//   toggleScroll();
-// });
-
-// closeBlock.addEventListener("click", () => {
-//   navigation.classList.toggle("navigation_show");
-//   toggleScroll();
-// });
-// closeBtn.addEventListener("click", () => {
-//   navigation.classList.toggle("navigation_show");
-//   toggleScroll();
-// });
-
-// for (let index = 0; index < link__nav.length; index++) {
-//   const element = link__nav[index];
-//   element.addEventListener("click", () => {
-//     navigation.classList.toggle("navigation_show");
-//     toggleScroll();
-//   });
-// }
-
 let navigation = document.getElementById("navigation");
 let toggleElemets = [
   document.getElementById("header__burger"),
@@ -87,9 +59,21 @@ for (let index = 0; index < link__nav.length; index++) {
   toggleElemets.push(element);
 }
 
+let isNavOpen = false;
 for (let index = 0; index < toggleElemets.length; index++) {
   toggleElemets[index].addEventListener("click", () => {
-    navigation.classList.toggle("navigation_show");
-    toggleScroll();
+    if (!isNavOpen) {
+      navigation.classList.toggle("navigation_show");
+      toggleScroll();
+    } else {
+      navigation.classList.toggle("navigation_test");
+      setTimeout(function () {
+        navigation.classList.toggle("navigation_show");
+        navigation.classList.toggle("navigation_test");
+        toggleScroll();
+      }, 800);
+    }
+
+    isNavOpen = !isNavOpen;
   });
 }
