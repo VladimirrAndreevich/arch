@@ -159,10 +159,10 @@ a {
   }
 
   &_test {
-    animation: opacityAppear_backwards 0.8s forwards;
+    animation: opacityAppear_backwards 0.4s forwards;
 
     & .navigation__content {
-      animation: leftToRight_backwards 0.8s forwards;
+      animation: leftToRight_backwards 0.4s forwards;
     }
   }
 

@@ -71,7 +71,7 @@ for (let index = 0; index < toggleElemets.length; index++) {
         navigation.classList.toggle("navigation_show");
         navigation.classList.toggle("navigation_test");
         toggleScroll();
-      }, 800);
+      }, 400);
     }
 
     isNavOpen = !isNavOpen;
