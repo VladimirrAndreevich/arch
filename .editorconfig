@@ -1,0 +1,8 @@
+# Define the default settings for all files
+[*]
+# Set the indent style to tabs
+indent_style = tab
+# Set the indent size to 4
+indent_size = 2
+# Trim trailing whitespace
+trim_trailing_whitespace = true
