@@ -77,20 +77,39 @@ for (let index = 0; index < toggleElemets.length; index++) {
     isNavOpen = !isNavOpen;
   });
 }
-// const { active } = require("browser-sync");
-
 let activeLang = document.querySelector("#active-lang");
 // console.log(activeLange.innerHTML.trim());
 let changeLang = document.querySelectorAll(".change-lang");
 
-changeLang.forEach((element) => {
-  element.addEventListener("click", () => {
-    if (element.classList.contains("active") == false) {
-      activeLang.innerHTML = element.innerHTML;
+function translatePage(attr) {
+	let prevEl;
+	let index = 0;
 
-      changeLang.forEach((someEl) => {
-        someEl.classList.toggle("active");
-      });
-    }
-  });
+	for (const key in data[attr]) {
+		if (document.getElementsByClassName(key).length != 0) {
+			document.getElementsByClassName(key)[0].innerHTML = data[attr][key];
+		}
+	}
+}
+
+changeLang.forEach((element) => {
+	element.addEventListener("click", () => {
+		if (element.classList.contains("active") == false) {
+			activeLang.innerHTML = element.innerHTML;
+
+			changeLang.forEach((someEl) => {
+				someEl.classList.toggle("active");
+			});
+
+			translatePage(element.getAttribute("language"));
+		}
+	});
 });
+let data = {
+	english: {
+		"header__btn-contact": "Contact Us",
+	},
+	russian: {
+		"header__btn-contact": "Контакты",
+	},
+};
