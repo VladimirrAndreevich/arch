@@ -1,36 +1,50 @@
 <section class="contact" id="contact">
-  <div class="container-xxl">
-    <form class="contact__form" action="#" method="get">
-      <h3 class="form__title">Contact.</h3>
-      <input type="text" name="name" id="name" placeholder="Name" />
-      <input type="email" name="email" id="email" placeholder="Email" />
-      <select class="form-select" aria-label="Default select example">
-        <option selected>Property type</option>
-        <option value="1">First type</option>
-        <option value="2">Second type</option>
-        <option value="3">Third type</option>
-      </select>
-      <textarea
-        name="text"
-        id="text"
-        cols="30"
-        rows="1"
-        placeholder="Area"
-      ></textarea>
-      <input
-        type="text"
-        name="message"
-        id="message"
-        placeholder="Your message"
-      />
-      <input type="submit" value="Send" />
-    </form>
-  </div>
+	<div class="container-xxl">
+		<form class="contact__form" action="#" method="get">
+			<h3 class="form__title">Contact.</h3>
+			<input
+				class="contact__name"
+				type="text"
+				name="name"
+				id="name"
+				placeholder="Name"
+			/>
+			<input
+				class="contact__email"
+				type="email"
+				name="email"
+				id="email"
+				placeholder="Email"
+			/>
+			<select class="form-select" aria-label="Default select example">
+				<option class="form-option" selected>Property type</option>
+				<option class="form-option" value="1">First type</option>
+				<option class="form-option" value="2">Second type</option>
+				<option class="form-option" value="3">Third type</option>
+			</select>
+			<textarea
+				class="contact__text-input"
+				name="text"
+				id="text"
+				cols="30"
+				rows="1"
+				placeholder="Area"
+			></textarea>
+			<input
+				class="contact__message-input"
+				type="text"
+				name="message"
+				id="message"
+				placeholder="Your message"
+			/>
+			<input class="contact__send" type="submit" value="Send" />
+		</form>
+	</div>
 
-  <div class="row row-main">
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-  </div>
+	<div class="row row-main">
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+	</div>
 </section>
