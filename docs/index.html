@@ -84,6 +84,7 @@
     
           <div class="dropdown-center dropdown-lang d-none d-lg-block">
             <button
+              id="active-lang"
               class="btn dropdown-toggle btn-chose-lang"
               type="button"
               data-bs-toggle="dropdown"
@@ -92,8 +93,14 @@
               EN
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">EN</a></li>
-              <li><a class="dropdown-item" href="#">RU</a></li>
+              <li>
+                <a class="dropdown-item change-lang active" href="#" language="en"
+                  >EN</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item change-lang" href="#" language="ru">RU</a>
+              </li>
             </ul>
           </div>
         </div>

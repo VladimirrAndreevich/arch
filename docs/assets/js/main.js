@@ -77,3 +77,20 @@ for (let index = 0; index < toggleElemets.length; index++) {
     isNavOpen = !isNavOpen;
   });
 }
+// const { active } = require("browser-sync");
+
+let activeLang = document.querySelector("#active-lang");
+// console.log(activeLange.innerHTML.trim());
+let changeLang = document.querySelectorAll(".change-lang");
+
+changeLang.forEach((element) => {
+  element.addEventListener("click", () => {
+    if (element.classList.contains("active") == false) {
+      activeLang.innerHTML = element.innerHTML;
+
+      changeLang.forEach((someEl) => {
+        someEl.classList.toggle("active");
+      });
+    }
+  });
+});
